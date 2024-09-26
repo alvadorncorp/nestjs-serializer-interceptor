@@ -1,0 +1,8 @@
+if (git rev-parse -q --verify MERGE_HEAD || git rev-parse -q --verify REBASE_HEAD); then
+  exit 0
+fi
+
+if sh -c ": >/dev/tty" >/dev/null 2>/dev/null; then
+  MESSAGE=$(cat .git/COMMIT_EDITMSG | sed '/^[[:blank:]]*#/d;s/#.*//')
+  exec </dev/tty && CZ_SUBJECT="$MESSAGE" node_modules/.bin/cz --hook
+fi

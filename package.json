@@ -1,0 +1,27 @@
+{
+  "name": "nestjs-serializer-interceptor",
+  "version": "0.0.1",
+  "description": "NestJS serializer interceptor",
+  "main": "index.js",
+  "repository": "https://github.com/alvadorncorp/nestjs-serializer-interceptor",
+  "author": "Igor Sant'Ana <igor@alvadorn.com.br>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": " >= 18"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  }
+}
